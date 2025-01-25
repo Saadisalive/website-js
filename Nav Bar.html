@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: none;
+        color: #666;
+        background-color: #b6f8ef;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: darkgray blue green;
+      }
+      .topnav a {
+        float: left;
+        color: #ff0000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ff0000 #ffa500 blue green;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: grey;
+        color: black;
+      }
+     .pimg1, .pimg2, .pimg3{
+      position: relative;
+      opacity: 0.70;
+      background-repeat: no-repeat;
+      background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+     }  
+     .section{
+      text-align: center;
+      padding: 50px 80px;
+     }
+     .section-light{
+      background-color: #f4f4f4;
+      color: #666;
+     }
+     .section-dark{
+      background-color: black;
+      color: #ddd;
+     }
+
+    </style>
+
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="about me #.html">About_Me</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact_Me</a>
+    </div> <br>
+    <span class="border trans" style="font-size: 40px;">
+      <center>Welcome all to this websites</center>
+    </span><br>
+    <section>
+      <h2><center>Chinese cusinine</center></h2>
+      <p>Chinese cuisine, deeply rooted in Chinese culture, is one of the world's most diverse culinary traditions, featuring a wide array of regional variations based on ingredients and cooking styles across the country; key staples include rice, noodles, tofu, and soy sauce, often prepared in a wok and eaten with chopsticks, while prominent flavors can range from the fiery spice of Sichuan cuisine to the delicate tastes of Cantonese dishes, making it a globally influential food culture with dishes like dumplings, Peking duck, and spring rolls widely recognized worldwide. </p>  
+      </section>
+ <div class="pimg3">
+  <div class="ptext">
+    <span class="border trans">
+      Image Two Text
+    </span>
+  </div>
+ </div>
+ <br><br><br>
+ <section>
+  <img class="myslides" src="c:\Users\Lenovo\Pictures\download (13).jpeg" style="height: 500px; width:1340px;">
+  <img class="myslides" src="c:\Users\Lenovo\Pictures\download (14).jpeg" style="height: 500px; width:1340px;">
+  <img class="myslides" src="c:\Users\Lenovo\Pictures\images (17).jpeg" style="height: 500px; width:1340px;">
+ </section>
+ <script>
+  var myIndex = 0
+  carousel();
+
+function carousel(){
+var i;
+var x = document.getElementsByClassName("myslides");
+for (i = 0; i < x.length; i++){
+  x[i].style.display = "none";
+}
+myIndex++;
+if(myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 3000);
+  }
+  
+</script>
+ <section class="section section-dark">
+  all @copy rights reserved by Saad Shelby
+ </section>
+</body>
+</html>
